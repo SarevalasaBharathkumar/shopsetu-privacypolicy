@@ -3,285 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy - ShopSetu</title>
+<title>Privacy Policy - Shopsetu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
 <style>
+  /* The app's light theme only (spec section 6): no dark-mode variant. */
   :root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #5a5a5a;
-    --accent: #0f6b4c;
-    --border: #e5e5e5;
-    --card: #f7f8f7;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #121212;
-      --text: #eaeaea;
-      --muted: #a3a3a3;
-      --accent: #4fd39a;
-      --border: #2a2a2a;
-      --card: #1a1c1b;
-    }
+    --bg: #FBFCF7;
+    --text: #17230E;
+    --accent: #5B7D22;
+    --muted: #6B7180;
+    --card: #F7F9EF;
+    --border: #E6E9DC;
   }
   * { box-sizing: border-box; }
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
   }
-  .wrap {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 48px 20px 80px;
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 24px; }
+  .wordmark {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: -0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
   }
-  header {
-    margin-bottom: 32px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 24px;
-  }
-  h1 {
-    font-size: 1.9rem;
-    margin: 0 0 8px;
-  }
-  .meta {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
-  h2 {
-    font-size: 1.25rem;
-    margin-top: 40px;
-    margin-bottom: 12px;
-    color: var(--accent);
-  }
-  p, li {
-    font-size: 0.98rem;
-  }
-  ul {
-    padding-left: 22px;
-  }
-  li {
-    margin-bottom: 6px;
-  }
+  .wordmark .shop { color: var(--text); }
+  .wordmark .setu { color: var(--accent); }
+  h1, h2 { font-family: "Manrope", sans-serif; font-weight: 800; letter-spacing: -0.3px; }
+  h1 { font-size: 1.75rem; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; color: var(--accent); margin: 36px 0 10px; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  p, li { font-size: 0.97rem; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
   .card {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 20px;
-    margin: 16px 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 14px 0;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 12px 0;
-    font-size: 0.92rem;
-  }
-  th, td {
-    text-align: left;
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-  }
-  th {
-    color: var(--muted);
-    font-weight: 600;
-  }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
   a { color: var(--accent); }
-  .placeholder {
-    background: rgba(255, 196, 0, 0.18);
-    border-radius: 4px;
-    padding: 0 4px;
-  }
-  footer {
-    margin-top: 48px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
+  <div class="wordmark" aria-label="Shopsetu"><span class="shop">Shop</span><span class="setu">setu</span></div>
   <h1>Privacy Policy</h1>
-  <div class="meta">
-    ShopSetu &middot; Effective date: <span class="placeholder">10/09/2026</span>
-  </div>
+  <div class="meta">Effective date: 4 October 2026</div>
 </header>
 
 <p>
-  ShopSetu ("the App", "we", "us") is a B2B ordering application connecting wholesale
-  Distributors and retail Shopkeepers. This Privacy Policy explains what information the
-  App collects, how it is used, and the choices you have. By creating an account or using
-  the App, you agree to the practices described here.
+  Shopsetu ("the App", "we", "us") is a business-to-business ordering app that connects
+  wholesale distributors with retail shopkeepers. This policy explains what the App collects,
+  why, who it is shared with, and the choices you have. By using the App you agree to the
+  practices described here.
 </p>
 
 <h2>1. Information We Collect</h2>
-
-<p>We collect only the information necessary to operate the ordering platform.</p>
-
+<p>We collect only what is needed to run the ordering service.</p>
+<div class="table-wrap">
 <table>
   <tr><th>Category</th><th>What we collect</th><th>Why</th></tr>
   <tr>
-    <td>Account credentials</td>
-    <td>Email address (used for one-time-passcode sign-in)</td>
-    <td>To authenticate and secure your account</td>
+    <td>Sign-in details</td>
+    <td>Shopkeepers: phone number and password. Distributors: email address and password. Passwords are stored only in hashed form by our sign-in provider.</td>
+    <td>To sign you in and keep your account secure</td>
   </tr>
   <tr>
-    <td>Profile information</td>
-    <td>Full name, phone number (optional)</td>
-    <td>To identify you within the platform and enable contact between shops and distributors</td>
+    <td>Recovery email</td>
+    <td>The email address on your account</td>
+    <td>To send password-reset emails when you ask for one</td>
   </tr>
   <tr>
     <td>Shop information</td>
-    <td>Shop name, owner name, phone/email, address, city, area, pincode</td>
-    <td>To register and operate a shop profile, and to fulfill orders</td>
+    <td>Shop name, owner name, phone, email, address, area, city and pincode</td>
+    <td>To set up your shop and deliver your orders</td>
   </tr>
   <tr>
-    <td>Order data</td>
-    <td>Items ordered, quantities, order status, delivery address, payment status</td>
-    <td>To process, track, and fulfill B2B orders</td>
+    <td>Orders</td>
+    <td>Items, quantities, prices, delivery address, order status and payment status (paid or not paid). The App does not take card, UPI or bank details.</td>
+    <td>To place, track and fulfil orders</td>
   </tr>
   <tr>
-    <td>Product images (Admin/Distributor use)</td>
-    <td>Photos selected from your device gallery or camera</td>
-    <td>To upload and display product catalog images</td>
+    <td>Terms acceptance</td>
+    <td>The version of the Terms and Conditions you accepted and when</td>
+    <td>To record that you agreed to the current terms</td>
   </tr>
   <tr>
-    <td>Uploaded files (Admin use)</td>
-    <td>Spreadsheet (.xlsx) files</td>
-    <td>To bulk-import product catalog data</td>
+    <td>Product photos and files (distributors)</td>
+    <td>Photos you take or pick for products; spreadsheet (.xlsx) files you upload</td>
+    <td>To show product images and bulk-import the catalogue</td>
   </tr>
   <tr>
-    <td>Local app preferences</td>
-    <td>Session tokens, app settings stored on-device</td>
-    <td>To keep you signed in and remember app preferences</td>
+    <td>Distributor access requests</td>
+    <td>Business name, contact number and email you submit when asking to join as a distributor</td>
+    <td>To review the request and contact you</td>
+  </tr>
+  <tr>
+    <td>App diagnostics and usage</td>
+    <td>Crash reports and app usage events (see section 3)</td>
+    <td>To fix problems and improve the App</td>
+  </tr>
+  <tr>
+    <td>On-device settings</td>
+    <td>Session, theme, language and biometric-lock settings, and a short-lived offline copy of the catalogue</td>
+    <td>To keep you signed in and remember your choices</td>
   </tr>
 </table>
-
+</div>
 <p>
-  We do <strong>not</strong> collect precise device GPS location. Address fields (city,
-  area, pincode) are entered manually and are not derived from device location services.
+  We do <strong>not</strong> collect your location, contacts or advertising ID. Address fields
+  are typed in by you or your distributor.
 </p>
 
 <h2>2. How We Use Your Information</h2>
 <ul>
-  <li>To create and manage your account and shop profile</li>
-  <li>To process, track, and deliver orders between shopkeepers and distributors</li>
-  <li>To send in-app notifications about order status changes (e.g. confirmed, packed, out for delivery)</li>
-  <li>To maintain the security and integrity of the platform (e.g. blocking abusive accounts)</li>
-  <li>To provide customer support when you contact us</li>
+  <li>To create and manage your account and shop</li>
+  <li>To process orders between shopkeepers and distributors and show their status</li>
+  <li>To show in-app notifications about your orders (for example confirmed, packed or delivered)</li>
+  <li>To keep the platform secure (for example blocking an account that is misused)</li>
+  <li>To find and fix crashes and understand which features are used</li>
+  <li>To answer you when you contact us</li>
 </ul>
 
 <h2>3. How Information Is Shared</h2>
-<p>We do not sell your personal information. Information is shared only as follows:</p>
+<p>We do not sell your personal information. It is shared only as follows:</p>
 <ul>
   <li>
-    <strong>Backend infrastructure:</strong> App data (accounts, shops, orders, product
-    images) is stored and processed using <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>,
-    our backend service provider, which hosts our database, authentication, and file storage.
+    <strong>Supabase</strong> (<a href="https://supabase.com" target="_blank" rel="noopener">supabase.com</a>)
+    hosts our database, sign-in and file storage, and sends password-reset emails.
   </li>
   <li>
-    <strong>Between platform participants:</strong> Shop contact and order details are
-    visible to the distributor/admin side of the platform as necessary to fulfill orders.
-    Shopkeepers do not see other shops' data.
+    <strong>Firebase Crashlytics</strong> (Google) receives crash reports: device model, Android
+    version, app version, the error, and your user ID. For distributors the report also carries
+    the account email; for shopkeepers the shop code and shop name. This helps us fix the
+    problem you hit.
   </li>
   <li>
-    <strong>Legal requirements:</strong> We may disclose information if required by law or
-    to protect the rights, safety, and integrity of the platform and its users.
+    <strong>Firebase Analytics</strong> (Google) receives usage events: screens opened, sign-in
+    (with your role), items added to the cart, and orders placed (value and number of items).
+    It is not used for advertising.
+  </li>
+  <li>
+    <strong>Between users of the App:</strong> your distributor sees your shop details and the
+    orders you place with them. Shopkeepers never see other shops' data.
+  </li>
+  <li>
+    <strong>Legal requirements:</strong> we may disclose information if the law requires it or
+    to protect the safety and integrity of the platform and its users.
   </li>
 </ul>
 
 <h2>4. Data Storage &amp; Security</h2>
 <p>
-  Data is stored on Supabase-managed infrastructure and protected using database-level
-  access rules (Row Level Security) so that shopkeepers can only access their own shop and
-  order data. All network communication with our backend is encrypted in transit (HTTPS).
+  Your data is stored on Supabase-managed servers and protected by database access rules
+  (Row Level Security), so a shopkeeper can only reach their own shop and orders. All traffic
+  between the App and our servers is encrypted (HTTPS).
 </p>
+<p>
+  <strong>Biometric sign-in and app lock (optional):</strong> your fingerprint or face is
+  checked by Android itself and never reaches the App or us. If you turn on biometric sign-in,
+  your login ID and password are kept encrypted on your phone (Android Keystore) and are used
+  only to sign you in.
+</p>
+<!--
+  Un-comment this paragraph when Split to Pack (packing lists) is released:
+<p>
+  <strong>Files the App creates (distributors):</strong> packing lists are made as PDF files on
+  the distributor's phone. They are saved to the phone's Downloads folder or shared through
+  WhatsApp or the Android share sheet only when the distributor chooses to. We do not upload
+  these files.
+</p>
+-->
 
 <h2>5. Data Retention</h2>
 <p>
-  We retain account and order data for as long as your account is active, or as needed to
-  provide the service, comply with legal obligations, resolve disputes, and enforce our
-  agreements. If your account is deleted, associated order history may be retained in
-  anonymized or aggregated form for record-keeping where historical orders exist.
+  We keep account and order data while your account is active, and afterwards as long as needed
+  to provide the service, meet legal and accounting duties, resolve disputes and enforce our
+  agreements. Crash reports and analytics events are kept by Firebase for its standard
+  retention period.
 </p>
 
 <h2>6. Your Choices &amp; Rights</h2>
 <ul>
-  <li>You may update your profile and shop information within the App.</li>
-  <li>You may request access to, correction of, or deletion of your personal data by contacting us (see below).</li>
-  <li>You may request that your account be deleted; note that orders linked to historical records may be retained where required for accounting/legal purposes.</li>
+  <li>Shopkeepers can view and update their shop and contact details in the App (Settings, Account Information).</li>
+  <li>You can turn biometric sign-in and the app lock on or off at any time in Settings.</li>
+  <li>You can ask us for a copy of your data, a correction, or deletion (see below).</li>
 </ul>
 
 <h2 id="delete-account">7. Delete My Account</h2>
-<p>
-  You can request deletion of your ShopSetu account and associated personal data at any time.
-</p>
+<p>You can ask us to delete your Shopsetu account and personal data at any time.</p>
 <div class="card">
   <p><strong>How to request deletion:</strong></p>
   <ul>
-    <li>Email us at <span class="placeholder">sarevalasab@gmail.com</span> from your registered email address, with the subject line "Account Deletion Request".</li>
-    <li>Include your registered email address and, if known, your shop code/name so we can locate your account.</li>
-    <li>We will verify the request and process it within <span class="placeholder">[INSERT NUMBER OF DAYS, e.g. 30]</span> days.</li>
+    <li>Email <a href="mailto:shopsetu.info@gmail.com?subject=Account%20Deletion%20Request">shopsetu.info@gmail.com</a> with the subject "Account Deletion Request".</li>
+    <li>Include the phone number or email you sign in with and, if known, your shop name or shop code.</li>
+    <li>We will verify the request and complete it within 30 days.</li>
   </ul>
   <p><strong>What gets deleted:</strong></p>
   <ul>
-    <li>Your login credentials, profile information (name, phone), and shop contact/address details.</li>
-    <li>Any product images you personally uploaded, where applicable.</li>
+    <li>Your sign-in details, profile, and shop contact and address details.</li>
+    <li>Product photos you uploaded, where applicable.</li>
   </ul>
-  <p><strong>What may be retained, and why:</strong></p>
+  <p><strong>What may be kept, and why:</strong></p>
   <ul>
     <li>
-      If your account has historical orders, your account will be <strong>blocked</strong>
-      (access revoked) rather than fully deleted, and past order records will be retained.
-      This is because order/transaction history must be preserved for accounting, tax, and
-      dispute-resolution purposes, and to maintain the integrity of other users' order records
-      that reference your shop.
+      If your account has past orders, it is <strong>blocked</strong> (access removed) instead of
+      fully deleted, and those order records are kept. Order history must be preserved for
+      accounting, tax and dispute resolution, and because other users' records refer to it.
     </li>
-    <li>
-      Accounts with no order history are deleted outright, with no data retained beyond what
-      is legally required (e.g. server logs kept for a limited period for security purposes).
-    </li>
+    <li>Accounts with no orders are deleted outright, apart from what the law requires us to keep.</li>
   </ul>
 </div>
 
 <h2>8. Children's Privacy</h2>
 <p>
-  ShopSetu is intended for business use by shop owners and distributor staff. It is not
-  directed at children, and we do not knowingly collect personal information from anyone
-  under 18 years of age.
+  Shopsetu is for business use by shop owners and distributor staff. It is not meant for
+  children, and we do not knowingly collect information from anyone under 18.
 </p>
 
 <h2>9. Permissions Used by the App</h2>
 <div class="card">
   <ul>
-    <li><strong>Internet access</strong> — required to communicate with our backend servers.</li>
-    <li><strong>Photos / Camera (optional)</strong> — used only when uploading a product image; the App does not access your media library beyond the image you explicitly select.</li>
-    <li><strong>File access (Admin only)</strong> — used only when selecting a spreadsheet file for bulk product upload.</li>
+    <li><strong>Internet and network state</strong>: to talk to our servers and tell you when you are offline.</li>
+    <li><strong>Biometrics (optional)</strong>: for fingerprint or face sign-in and the app lock.</li>
+    <li><strong>Camera and photos (distributors, optional)</strong>: only when you add a product photo; the App reads only the photo you take or pick.</li>
+    <li><strong>Files (distributors)</strong>: only the spreadsheet you pick for bulk product upload.</li>
   </ul>
+  <p>The App does not use the advertising ID.</p>
 </div>
 
 <h2>10. Changes to This Policy</h2>
 <p>
-  We may update this Privacy Policy from time to time. Material changes will be reflected
-  by updating the "Effective date" above. Continued use of the App after changes take
-  effect constitutes acceptance of the revised policy.
+  We may update this policy. When we do, we change the effective date at the top of this page.
+  Continuing to use the App after a change means you accept the updated policy.
 </p>
 
 <h2>11. Contact Us</h2>
-<p>
-  If you have questions about this Privacy Policy or wish to exercise your data rights,
-  contact us at:
-</p>
+<p>Questions about this policy or your data? Contact us:</p>
 <div class="card">
-  
-  Email: <span class="placeholder">sarevalasab@gmail.com</span><br>
+  Email: <a href="mailto:shopsetu.info@gmail.com">shopsetu.info@gmail.com</a>
 </div>
+
+<footer>&copy; 2026 Shopsetu</footer>
 
 </div>
 </body>

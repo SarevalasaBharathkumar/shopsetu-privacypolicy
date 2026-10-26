@@ -65,7 +65,7 @@
 <header>
   <div class="wordmark" aria-label="Shopsetu"><span class="shop">Shop</span><span class="setu">setu</span></div>
   <h1>Privacy Policy</h1>
-  <div class="meta">Effective date: 20 October 2026</div>
+  <div class="meta">Effective date: 27 October 2026</div>
 </header>
 
 <p>
@@ -104,6 +104,16 @@
     <td>GST and invoice details</td>
     <td>The GSTIN and state of a shop or distributor (optional), the invoices, credit notes and debit notes a distributor issues, and the purchase bills a distributor records</td>
     <td>To charge the right tax, issue invoices and prepare GST returns</td>
+  </tr>
+  <tr>
+    <td>Payments, dues and credit</td>
+    <td>The payments a distributor records against an order (amount, method, date, optional reference), what a shop owes, and credit limits. The App does not take card, UPI or bank details and does not move money.</td>
+    <td>To show what is paid and due, and to send payment reminders</td>
+  </tr>
+  <tr>
+    <td>Purchases, stock and costs (distributors)</td>
+    <td>Supplier bills a distributor records, including photos of the bills it scans, and the stock, cost and margin figures worked out from them</td>
+    <td>To keep stock, cost and profit and to prepare input GST</td>
   </tr>
   <tr>
     <td>Terms acceptance</td>
@@ -153,6 +163,11 @@
   <li>
     <strong>Supabase</strong> (<a href="https://supabase.com" target="_blank" rel="noopener">supabase.com</a>)
     hosts our database, sign-in and file storage, and sends password-reset emails.
+  </li>
+  <li>
+    <strong>Google Gemini</strong> (Google) reads supplier bills. When a distributor scans a
+    bill, the photo is sent from our server to Gemini to extract the supplier, date and lines.
+    We use it only to read that bill. Check the result before saving; it can be wrong.
   </li>
   <li>
     <strong>Firebase Crashlytics</strong> (Google) receives crash reports: device model, Android
